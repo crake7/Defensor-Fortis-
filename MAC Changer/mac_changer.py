@@ -4,7 +4,11 @@ import argparse
 import re
 
 
+""" MAC CHANGER - changes MAC Address to anything desired. """
+
+
 def get_arguments():
+    """Input commands:<interface> <mac> <help> on the terminal."""
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--interface", dest="interface", help="Interface to change its MAC address")
     parser.add_argument("-m", "--mac", dest="new_mac", help="New MAC address")
@@ -16,11 +20,13 @@ def get_arguments():
     return args
 
 def change_mac(interface, new_mac):
+    """Change MAC address."""
     subprocess.call(["ifconfig", interface, "down"])
     subprocess.call(["ifconfig", interface, "hw", "ether", new_mac])
     subprocess.call(["ifconfig", interface, "up"])
 
 def get_current_mac(interface):
+    """Prints MAC address using Regex."""
     ifconfig_result = subprocess.check_output(["ifconfig", interface])
     mac_address_search_result = re.search(r'\w\w:\w\w:\w\w:\w\w:\w\w:\w\w', ifconfig_result)
     if mac_address_search_result:
