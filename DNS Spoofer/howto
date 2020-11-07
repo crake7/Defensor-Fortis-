@@ -14,19 +14,30 @@ iptables -I FORWARD -j NFQUEUE --queue-num 0
 Now you can run net-cut.py program. You may uncomment either <packet.accept()> or <packet.drop()> depending on the 
 objective of the attack. 
 
+When you have finished, you will need to delete the iptable rules you created for this attack. 
+You will need to type the following command on the Linux bash terminal:
+iptables --flush 
 
---dns_spoof.py this program redirects DNS requests by redirecting a target from one website to another. This program
-assumes you are running a static website.
+
+
+
+--dns_spoof.py this program redirects DNS requests by redirecting a target from one website (that is not using HSTS) to another. This program
+assumes you are running a static website where you will redirect the target to. 
 
 Before running program:
-1. You will need to redirect the input/output packets to a queue:
+1. You will need to redirect the input/output packets to a queue in your computer:
 To achieve this, type the following command on the Linux bash terminal:
 iptables -I INPUT -j NFQUEUE --queue-num 0
 iptables -I OUTPUT -j NFQUEUE --queue-num 0
 
-2. Make sure your web server is running. As I used the pre-installed web serber of Kali Linux, I typed in the terminal:
+2. Make sure your web server is running. As I used the pre-installed web server of Kali Linux, I typed in the terminal:
 service apache2 start
 
 3. Become MITM (you may use the ARP SPOOFER programs in this suite of tools to achieve this).
 
-Now you can run, dns_spoof.py program. You will need to modify the website 
+Now you can run, dns_spoof.py program. You will need to modify the <website> your target visits and the input the <static 
+ip> where the target will be directed to. Use "cat dns_spoof.py" to see exactly where to modify these values. 
+
+When you have finished, you will need to delete the iptable rules you created for this attack. 
+You will need to type the following command on the Linux bash terminal:
+iptables --flush 
