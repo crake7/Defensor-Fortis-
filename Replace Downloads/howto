@@ -1,0 +1,25 @@
+REPLACE DOWNLOAD:
+This program is able to recognize when a target is downloading a file from an HTTP page and then replaces it on the fly.
+This program assumes you are running a static web server and will be providing an executable to the target.
+
+Before running the program:
+-You will need to intercept the packets from the target computer and forward them. To achieve this type the following 
+command on the Linux bash terminal:
+iptables -I FORWARD -j NFQUEUE --queue-num 0
+
+-You will also need to allow the target to have internet connection. Type in the terminal:
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+-Do not forget to start the web server you will use to provide target with the executable file. Type in terminal:
+service apache2 start
+
+Optional: If you previously modified the iptables, you will ned to flush the previous rules. Type in terminal:
+iptables --flush
+
+-Become the MITM. (You may achieve this using the ARP SPOOFER programs in this suite of tools.)
+
+Now, on the replace_downloads.py file you will need to input the IP of your static web server and the absolute URL
+where the target will get the executable from. Use "cat replace_downloads.py" to see where to make these changes.
+
+Once you have finished, do not forget to flush your iptables rules by typing in the terminal:
+iptables --flush.
