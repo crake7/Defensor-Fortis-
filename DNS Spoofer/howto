@@ -1,0 +1,32 @@
+DNS SPOOFER folder contains two very different programs: net-cut.py and dns_spoof.py. I will go in more detail on the inner
+workings on each of them and their requirements.
+
+--net-cut.py is a very simple program to cut or restablish the internet connection of a victim computer. 
+This tool can be used with social engineering techniques to persuade the target to give away valuable information. 
+
+Before running program:
+1. You will need to receive all the target network packets and keep them on a queue:
+To achieve this, type the following command on Linux bash terminal:
+iptables -I FORWARD -j NFQUEUE --queue-num 0
+
+2. Become MITM (you may use the ARP SPOOFER programs in this suite of tools to achieve this).
+
+Now you can run net-cut.py program. You may uncomment either <packet.accept()> or <packet.drop()> depending on the 
+objective of the attack. 
+
+
+--dns_spoof.py this program redirects DNS requests by redirecting a target from one website to another. This program
+assumes you are running a static website.
+
+Before running program:
+1. You will need to redirect the input/output packets to a queue:
+To achieve this, type the following command on the Linux bash terminal:
+iptables -I INPUT -j NFQUEUE --queue-num 0
+iptables -I OUTPUT -j NFQUEUE --queue-num 0
+
+2. Make sure your web server is running. As I used the pre-installed web serber of Kali Linux, I typed in the terminal:
+service apache2 start
+
+3. Become MITM (you may use the ARP SPOOFER programs in this suite of tools to achieve this).
+
+Now you can run, dns_spoof.py program. You will need to modify the website 
