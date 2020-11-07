@@ -3,15 +3,10 @@
 import scapy.all as scapy
 import argparse
 
-"""NETWORK SCANNER: scans network and discovers the IP and MAC address of all connected clients. 
-Use Terminal and add command: <target>, <ip_range>.
-Uses Scapy library(tool for manipulating network packets)."""
-
-
 def parsero():
-    """Accepts <target>, <ip_range> and <help> on bash terminal."""
+    """Input <ip_range/subnet> or <help> on bash terminal."""
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--target", dest="ip_range", help="Provide IP range & subnet mask")
+    parser.add_argument("-t", "--target", dest="ip_range", help="Provide IP range/subnet mask")
     args = parser.parse_args()
     return args
 
