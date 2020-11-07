@@ -1,0 +1,8 @@
+NETWORK SCANNER:
+Scans network and discovers the IP and MAC address of all connected clients. 
+
+Use Linux bash terminal and add command: python network_scanner.py -t <IP_Range/subnet_mask>
+Example: python3 network_scanner.py -t 10.0.0.1/24
+
+If using more than one interface, one NIC should be turned off. 
+You may use ifconfig/ipconfig <NIC> down. 
