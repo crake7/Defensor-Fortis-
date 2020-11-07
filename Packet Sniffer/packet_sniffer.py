@@ -26,4 +26,4 @@ def process_sniffed_packet(packet):
         if login_info:
             print("\n\n)POSSIBLE USERNAMES/PASSWORD: " + login_info + "\n\n")
 
-sniff('eth0')
+sniff(#INPUT NIC here:'eth0')
