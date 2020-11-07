@@ -34,4 +34,4 @@ def process_sniffed_packet(packet):
         except IndexError:
             pass
 
-sniff('eth0')
+sniff(#INPUT HERE THE INTERFACE TO SNIFF:'eth0')
