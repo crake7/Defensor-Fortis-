@@ -1,0 +1,12 @@
+CODE INJECTOR injects code in intercepted HTML pages, this folder contains two files: BeEF and Javascript. 
+
+code_injector_beEF.py assumes you are using BeEF framework and has been already configured. 
+Yoy may need to modify <injection_code> variable within the code itself.
+Use "cat code_injector_beEF.py" to inspect the content of the file and replace the example IP address with your
+system's IP address. 
+
+code_injector_javascript.py currently uses a weak javascript code to inject to the HTML page as an example. 
+You need to insert the javascript code you want to insert within the HTML page. 
+
+Please note you will only be able to inject code once you have become MITM. Use the ARP SPOOFER program in this 
+suite of tools to achieve this. 
