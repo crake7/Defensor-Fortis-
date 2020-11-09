@@ -1,4 +1,4 @@
-Key Logger foler contains two files: one is the configuration of the Key Logger class, and the other is an example of how to use it. 
+Key Logger folder contains two files: one is the configuration of the Key Logger class, and the other is an example of how to use it. 
 
 KLogger.py will take three inputs: <timer in seconds>, <email> and <password>. 
 -Timer in seconds: how often do you want to recieve an email with the results of the program.
