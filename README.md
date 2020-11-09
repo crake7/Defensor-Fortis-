@@ -5,7 +5,7 @@ The following tools have been created to exploit system weaknesses and vulnerabi
 
 Each folder is provided with a text file named "howto" which explains how to use each program in detail. 
 In addition, some of these programs will require you to bypass HTTPS in order to maximize its utility.
-I use "sslstrip" in order to achieve this:
+I use "sslstrip" in order to achieve this, beware this will not work with website that use HSTS.
 
 BYPASS HTTPS
 1. Make sure your iptables are flushed, type in bash terminal:
