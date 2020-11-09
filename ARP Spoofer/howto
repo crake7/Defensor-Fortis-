@@ -18,6 +18,6 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
  
 ARP SPOOFER DETECTOR
-In addition, arp_spoofy_detector.py detects ARP spoofing attacks. YOu may need to input the <NIC> you'd like
+In addition, arp_spoofy_detector.py detects ARP spoofing attacks. You may need to input the <NIC> you'd like
 to sniff directly into the program. 
 Use "cat apr_spoofy_detector.py" to inspect the content of the program. 
