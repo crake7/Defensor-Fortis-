@@ -1,6 +1,7 @@
 REPLACE DOWNLOAD:
 This program is able to recognize when a target is downloading a file from an HTTP page and then replaces it on the fly.
 This program assumes you are running a static web server and will be providing an executable to the target.
+You may also use this program with HTTPS. Check out the README file to see how to bypass HTTPS.
 
 Before running the program:
 -You will need to intercept the packets from the target computer and forward them. To achieve this type the following 
