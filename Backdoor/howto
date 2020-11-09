@@ -15,3 +15,11 @@ Currently, the backdoor file is using port 4444, you I suggest you input this po
 
 3. When you want to close the connection, simply type in the terminal:
 "exit" 
+
+
+Now, to set up the backdoor.py program:
+
+1. You need to input your system's <IP> adn the <PORT> number you wish to use. Currently, it is setup to listen on port 4444.
+
+2. This program has been set up to provide persistence, this means that the program will start whenever the system starts. Shoudl you decide
+to modify the location of this setting, use "cat backdoor.py". 
