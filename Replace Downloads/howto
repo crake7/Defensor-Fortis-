@@ -5,7 +5,7 @@ You may also use this program with HTTPS. Check out the README file to see how t
 
 Before running the program:
 1. You will need to intercept the packets from the target computer and forward them. 
-If you do know need to bypass HTTPS, you will need to type the following command on the Linux bash terminal:
+If you do not need to bypass HTTPS, you will need to type the following command on the Linux bash terminal:
 iptables -I FORWARD -j NFQUEUE --queue-num 0
 
 You will also need to allow the target to have internet connection. Type in the terminal:
