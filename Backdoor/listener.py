@@ -79,5 +79,5 @@ class Listener:
             print(result)
 
 
-my_listener = Listener("10.0.2.15", 4444)
+my_listener = Listener(ip_address, 4444)
 my_listener.run()
