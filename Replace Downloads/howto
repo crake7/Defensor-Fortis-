@@ -24,9 +24,8 @@ iptables --flush
 -Become the MITM. (You may achieve this using the ARP SPOOFER programs in this suite of tools.)
 
 Now, on the replace_downloads.py file you will need to input the IP of your static web server and the absolute URL
-where the target will get the executable from. Use "cat replace_downloads.py" to see where to make these changes.
-If your target will download a file form an HTTP page, leave the code as it is. However if your target will use HTTPS, you
-need to change 
+where the target will get the executable from. If your target will download a file form an HTTP page, select port 80 on line 22.
+However if your target will use HTTPS, select port 10000 on line 29. Use "cat replace_downloads.py" to see where to make these changes.
 
 Once you have finished, do not forget to flush your iptables rules by typing in the terminal:
 iptables --flush.
