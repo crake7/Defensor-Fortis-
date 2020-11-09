@@ -1,0 +1,9 @@
+Key Logger foler contains two files: one is the configuration of the Key Logger class, and the other is an example of how to use it. 
+
+KLogger.py will take three inputs: <timer in seconds>, <email> and <password>. 
+-Timer in seconds: how often do you want to recieve an email with the results of the program.
+-Email: which Gmail account would you use.
+-Password: pretty self-explanatory, I hope.
+
+As you may notice, the keylogger.py class will use Gmails public SMTP server to send you the updates. Thus, you need to enable LESS SECURE APPS
+in your Gmail account configurations. 
