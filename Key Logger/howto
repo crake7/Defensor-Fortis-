@@ -5,5 +5,5 @@ KLogger.py will take three inputs: <timer in seconds>, <email> and <password>.
 -Email: which Gmail account would you use.
 -Password: pretty self-explanatory, I hope.
 
-As you may notice, the keylogger.py class will use Gmails public SMTP server to send you the updates. Thus, you need to enable LESS SECURE APPS
+As you may notice, the keylogger.py class will use Gmail's public SMTP server to send you the updates. Thus, you need to enable LESS SECURE APPS
 in your Gmail account configurations. 
