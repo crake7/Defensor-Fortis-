@@ -22,4 +22,4 @@ Now, to set up the reverse_backdoor.py program:
 1. You need to input your system's <IP> and the <PORT> number you wish to use. Currently, it is setup to listen on port 4444.
 
 2. This program has been set up to provide persistence, this means that the program will start whenever the system starts. Should you decide
-to modify the location of this setting, use "cat reverse_backdoor.py". 
+to modify the location of this setting, use "cat reverse_backdoor.py" to inspect it. 
