@@ -1,4 +1,5 @@
 CODE INJECTOR injects code in intercepted HTML pages, this folder contains two files: BeEF and Javascript. 
+You may use this program with a target who will use HTTP or HTTPS. Check the README file to learn how to bypass HTTPS.
 
 code_injector_beEF.py assumes you are using BeEF framework and has been already configured. 
 Yoy may need to modify <injection_code> variable within the code itself.
@@ -7,6 +8,20 @@ system's IP address.
 
 code_injector_javascript.py currently uses a weak javascript code to inject to the HTML page as an example. 
 You need to insert the javascript code you want to insert within the HTML page. 
+
+Before running the program:
+1. You will need to intercept the packets from the target computer and forward them. 
+If you do not need to bypass HTTPS, you will need to type the following command on the Linux bash terminal:
+iptables -I FORWARD -j NFQUEUE --queue-num 0
+
+You will also need to allow the target to have internet connection. Type in the terminal:
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+Instead, if you are using SSL STRIP, you only need to type in the terminal:
+iptables -I OUTPUT -j NFQUEUE --queue-num 0
+iptables -I OUTPUT -j NFQUEUE --queue-num 0
+
+
 
 Please note you will only be able to inject code once you have become MITM. Use the ARP SPOOFER program in this 
 suite of tools to achieve this. 
