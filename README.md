@@ -24,3 +24,7 @@ iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port
 Should you require any further guidance, feel free to contact me as well. 
 
 I recommend using Metasploitable to test the exploits. 
+
+
+
+Project created while taking the course: "Learn Python & Ethical Hacking From Scratch" by Zaid Sabih
