@@ -42,15 +42,16 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 
 ## Tools
 
-The repo is divided in two categories: <strong>Network Exploitation Tools</strong> and <strong>Malware</strong>:
+The repo is divided in two categories: <strong>Network Exploitation Tools</strong>, <strong>Web Application</strong>, and <strong>Malware</strong>:
 
-|Folder Name|Category|Description|
-|------|--------|--------|
-|ARP Spoofer| Network Exploitation| Redirects the flow of packets in a network, allowing to interecept data and become MITM.||
-
-
-
-|Backdoor| Malware| Gives remote control over the system it gets executed on, allowing to access file system, execute system commands and download & upload files.||
+|Folder Name|Category|Description|Requirements|
+|------|--------|--------|--------|
+|ARP Spoofer| Network Exploitation| Redirects the flow of packets in a network, allowing to interecept data and become MITM.| N/A||
+|Backdoor| Malware| Gives remote control over the system it gets executed on, allowing to access file system, execute system commands and download & upload files.N/A|||
+|Code Injector| Network Exploitation| Injects code in intercepted HTML pages. | Requires you to become MITM.||
+|Crawler| Web App/Bug Bounty| Discovers hidden paths on a target website.| N/A||
+|DNS Spoofer| Network Exploitation| Redirects DNS requests, eg: redirects requests to from one domain to another.| Requires you to become MITM.||
+|Key Logger| Malware| Records key-strikes and sends them to us by email.|N/A||
 
 
 
