@@ -16,6 +16,8 @@ The following programs have been created to learn how to exploit system weakness
 You may need to tweak the program depending on the version you want to run.  
 </p>
 
+If you are looking for additional tools written in Python 3, check out my other repo [Network-Pen-Test-Tools](https://github.com/crake7/Network-Pen-Test-Tools)!
+
 ## How-to
 
 Each folder is provided with a text file named ```howto.md``` which explains how to use each program in detail. 
