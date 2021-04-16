@@ -5,7 +5,7 @@ in the network. As a result, you will be able to intercept data and become MITM.
 
 Please note there is a difference between: `arp_spoofy_cmmdlineargs.py` and `arp_spoofy.py`:
 
-```arp_spoofy_cmmdlineargs.py``` needs you to input <target_IP> <gateway_IP> or <help> commands directly
+*```arp_spoofy_cmmdlineargs.py``` needs you to input <target_IP> <gateway_IP> or <help> commands directly
 on the Linux bash terminal.
 Example: `python3 arp_spoofy_cmmdlineargs.py -IPt 10.0.0.2 -IPg 10.0.0.1`
 
