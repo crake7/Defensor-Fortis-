@@ -10,7 +10,7 @@
 
 ___
 
-<h4>Do you want to use crafted tools for a penetration test?</h4>
+<h4>Are you looking for some crafted tools to use during a penetration test?</h4>
 <p>
 The following tools have been created to learn how to exploit system weaknesses and vulnerabilities using Python 2.X and 3.X  You may need to minimally tweak the program depending on the version you want to run.  
 </p>
