@@ -12,7 +12,7 @@ Currently, the backdoor file is using port 4444. Remember to use a port that is 
 2. This program allows the following features: 
   * Downloading files (Uses serialization converting files into JSON objects.) Type in: `download filename`
   * Uploading files (Uses serialization converting files into JSON objects.) Type in: `upload filename`
-  * Navegate through the file system. Type in: `cd filename` **Do not use relative paths.** 
+  * Navegate through the file system. Type in: `cd path` **Do not use relative paths.** 
 
 3. When you want to close the connection, simply type in the terminal: `exit` 
 
