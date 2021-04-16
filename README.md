@@ -26,8 +26,7 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 
 <h4>BYPASS HTTPS</h4>
 
-1. Make sure your iptables are flushed, type in bash terminal:
-`iptables --flush`
+1. Make sure your iptables are flushed by typing in the terminal: `iptables --flush`
 
 2. Become MITM, you may use any of the progrmas in the folder ARP Spoofer.
 
