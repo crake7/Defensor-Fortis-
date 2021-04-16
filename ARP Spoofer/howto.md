@@ -9,7 +9,7 @@ Please note there is a difference between: `arp_spoofy_cmmdlineargs.py` and `arp
 on the Linux bash terminal.
 Example: `python3 arp_spoofy_cmmdlineargs.py -IPt 10.0.0.2 -IPg 10.0.0.1`
 
---arp_spoofy.py needs you to input the <target_ip> and <gateway_ip> in the code itself.
+* ```arp_spoofy.py``` needs you to input the <target_ip> and <gateway_ip> in the code itself.
 Use "cat arp_spoofy.py" to inspect the content of the program.
 
 Once you have successfuly established a connection (and you are running the program in the terminal), you will
