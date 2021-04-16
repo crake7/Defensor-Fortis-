@@ -32,8 +32,7 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 
 3. Run SSL Strip (it runs by default in port 10,000). Type in terminal: `sslstrip`
 
-4. Redirect packets from your computer from port 80 to SSL Strip (again, on port 10,000). Type in terminal:
-`iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000`
+4. Redirect packets from your computer from port 80 to SSL Strip (again, on port 10,000): `iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000`
 
 5. Run the tool. 
 
