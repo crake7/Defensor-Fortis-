@@ -28,7 +28,7 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 
 1. Make sure your iptables are flushed by typing in the terminal: `iptables --flush`
 
-2. Become MITM: Use any of the progrmas in the folder [ARP Spoofer](/ARP Spoofer/).
+2. Become MITM: Use any of the progrmas in the folder [ARP Spoofer](../ARP Spoofer/)
 
 3.Run SSL Strip, it runs by default in port 10,000. Type in terminal:
 sslstrip
