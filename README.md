@@ -42,8 +42,15 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 
 ## Tools
 
-The repo is divided in two categories: <strong>Network Exploitation Tools</strong> and <strong>malware</strong> 
+The repo is divided in two categories: <strong>Network Exploitation Tools</strong> and <strong>malware</strong>:
+
+|Folder Name|Category|Description|
+|------|--------|--------|
+|Spiking|[Video](https://www.youtube.com/watch?v=3x2KT4cRP9o&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G&index=2)||
 
 ## Credits
 
 This repo was created while taking the course: [Learn Python & Ethical Hacking From Scratch](https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch) by Zaid Sabih. 
+
+Writers and contributors take NO responsibility and/or liability for how you choose to use any of the source code available here. By using any of the files available in this repository, you understand that you are AGREEING TO USE AT YOUR OWN RISK. Once again, ALL files available here are for EDUCATION and/or RESEARCH purposes ONLY.
+
