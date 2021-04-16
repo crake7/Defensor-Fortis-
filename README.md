@@ -42,7 +42,7 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 
 ## Tools
 
-The repo is divided in two categories: <strong>Network Exploitation Tools</strong>, <strong>Web Application</strong>, and <strong>Malware</strong>:
+The repo is divided in several categories: <strong>Network Exploitation Tools</strong>, <strong>Web Application</strong>, and <strong>Malware</strong>:
 
 |Folder Name|Category|Description|Requirements|
 |------|--------|--------|--------|
