@@ -2,7 +2,7 @@
 <h4 align="center">An assortment of tools and malware written in Python to use in a penetration test.</h4>
 
 <p align="center">
-  <a href="#Tools">Tools</a> •
+  <a href="#How-to">How To</a> •
   <a href="#Requirements">Requirements</a> •
   <a href="#Steps">Steps</a> •
   <a href="#Credits">Credits</a>
@@ -10,15 +10,20 @@
 
 ___
 
+<h4>Do you want to use crafted tools for a penetration test?</h4>
+<p>
+The following tools have been created to learn how to exploit system weaknesses and vulnerabilities using Python 2.X and 3.X  You may need to minimally tweak the program depending on the version you want to run.  
+</p>
 
-The following tools have been created to exploit system weaknesses and vulnerabilities using Python 2 and 3. 
-(You may need to minimally tweak the program depending on the version you use.)  
+## How-to
 
 Each folder is provided with a text file named "howto" which explains how to use each program in detail. 
-In addition, some of these programs will require you to bypass HTTPS in order to maximize its utility.
-I use "sslstrip" in order to achieve this, beware this will not work with websites that use HSTS.
 
-BYPASS HTTPS
+## Requirements
+
+Some of these programs will require you to bypass HTTPS. I used <strong>"sslstrip"</strong> in order to achieve this, beware this will not work with websites that use HSTS.
+
+*BYPASS HTTPS
 1. Make sure your iptables are flushed, type in bash terminal:
 iptables --flush
 
