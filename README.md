@@ -47,7 +47,7 @@ The repo is divided in several categories: <strong>Network Exploitation Tools</s
 |Folder Name|Category|Description|Requirements|
 |--------|--------|--------|--------|
 |ARP Spoofer| Network Exploitation| Redirects the flow of packets in a network, allowing to interecept data and become MITM.| N/A||
-|Backdoor| Malware| Gives remote control over the system it gets executed on, allowing to access file system, execute system commands and download & upload files.N/A|||
+|Backdoor| Malware| Gives remote control over the system it gets executed on, allowing to access file system, execute system commands and download & upload files.|N/A||
 |Code Injector| Network Exploitation| Injects code in intercepted HTML pages. | Requires you to become MITM.||
 |Crawler| Web App/Bug Bounty| Discovers hidden paths on a target website.| N/A||
 |DNS Spoofer| Network Exploitation| Redirects DNS requests, eg: redirects requests to from one domain to another.| Requires you to become MITM.||
@@ -58,7 +58,7 @@ The repo is divided in several categories: <strong>Network Exploitation Tools</s
 |Packet Sniffer| Network Exploitation| Filters intercepted data and shows usernames, passwords, visited links.| Requires you to become MITM.||
 |Replace Downloads| Network Exploitation| Recognizes when a target is downloading a file from an HTTP page and then replaces it on the fly.| Requires you to become MITM.||
 |Trojan| Malware| Downloads a trojan to execute the reverse backdoor.|Requires you to control a web server.||
-|Vulnerability Scanner| Network Exploitation| Scans a target website for weaknesses and produces a report with all findings.||
+|Vulnerability Scanner| Network Exploitation| Scans a target website for weaknesses and produces a report with all findings.| N/A||
 
 
 ## Credits
