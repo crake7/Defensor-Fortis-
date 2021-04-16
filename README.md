@@ -22,12 +22,12 @@ Each folder is provided with a text file named ```howto``` which explains how to
 
 ## Requirements
 
-Some of these programs will require you to bypass HTTPS. I used <strong>"sslstrip"</strong> in order to achieve this, beware this will not work with websites that use HSTS.
+Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip</strong> in order to achieve this, beware this will not work with websites that use HSTS.
 
 <h4>BYPASS HTTPS</h4>
 
 1. Make sure your iptables are flushed, type in bash terminal:
-iptables --flush
+`iptables --flush`
 
 2. Become MITM, you may use any of the progrmas in the folder ARP Spoofer.
 
