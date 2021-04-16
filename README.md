@@ -4,7 +4,6 @@
 <p align="center">
   <a href="#How-to">How To</a> •
   <a href="#Requirements">Requirements</a> •
-  <a href="#Steps">Steps</a> •
   <a href="#Credits">Credits</a>
 </p>
 
@@ -18,6 +17,7 @@ You may need to tweak the program depending on the version you want to run.
 
 ## How-to
 
+I recommend using Metasploitable to test the exploits. 
 Each folder is provided with a text file named ```howto``` which explains how to use each program in detail. 
 
 ## Requirements
@@ -34,12 +34,8 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 
 4. Redirect packets from your computer from port 80 to SSL Strip (again, on port 10,000): `iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000`
 
-5. Run the tool. 
+5. Run the program. 
 
-Should you require any further guidance, feel free to contact me as well. 
+## Credits
 
-I recommend using Metasploitable to test the exploits. 
-
-
-
-Project created while taking the course: "Learn Python & Ethical Hacking From Scratch" by Zaid Sabih
+This repo was created while taking the course: [Learn Python & Ethical Hacking From Scratch](https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch) by Zaid Sabih. 
