@@ -4,6 +4,7 @@
 <p align="center">
   <a href="#How-to">How To</a> •
   <a href="#Requirements">Requirements</a> •
+  <a href="#Tools">Tools</a> •
   <a href="#Credits">Credits</a>
 </p>
 
@@ -38,6 +39,10 @@ Some of these programs will require you to bypass HTTPS. I used <strong>sslstrip
 4. Redirect packets from your computer from port 80 to SSL Strip: `iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000`
 
 5. Run the program. 
+
+## Tools
+
+The repo is divided in two categories: <strong>Network Exploitation Tools</strong> and <strong>malware</strong> 
 
 ## Credits
 
