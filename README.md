@@ -52,8 +52,13 @@ The repo is divided in several categories: <strong>Network Exploitation Tools</s
 |Crawler| Web App/Bug Bounty| Discovers hidden paths on a target website.| N/A||
 |DNS Spoofer| Network Exploitation| Redirects DNS requests, eg: redirects requests to from one domain to another.| Requires you to become MITM.||
 |Key Logger| Malware| Records key-strikes and sends them to you by email.|N/A||
-|MAC Changer| Network Exploitation| Changes MAC Address to anything we want.|N/A||
-
+|MAC Changer| Network Exploitation| Changes your MAC Address to anything we want.|N/A||
+|Malware| Malware| Several files that download a file and execute it on target system.|N/A||
+|Network Scanner| Network Exploitation| Scans network and discovers the IP and MAC address of all connected clients.| Requires you to become MITM.||
+|Packet Sniffer| Network Exploitation| Filters intercepted data and shows usernames, passwords, visited links.| Requires you to become MITM.||
+|Replace Downloads| Network Exploitation| Recognizes when a target is downloading a file from an HTTP page and then replaces it on the fly.| Requires you to become MITM.||
+|Trojan| Malware| Downloads a trojan to execute the reverse backdoor.|Requires you to control a web server.||
+|Vulnerability Scanner| Network Exploitation| Scans a target website for weaknesses and produces a report with all findings.||
 
 
 ## Credits
