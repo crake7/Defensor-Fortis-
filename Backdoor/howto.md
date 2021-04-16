@@ -9,8 +9,7 @@ First, let's have a look at how the Listener.py file works:
 1. Input your **IP address** and the **PORT** number you will use to connect to the victim computer. 
 Currently, the backdoor file is using port 4444. Remember to use a port that is not being used by your system, otherwise it will not work.
 
-2. This program allows the following features:
-3. 
+2. This program allows the following features: 
 -Downloading files (Uses serialization converting files into JSON objects.) Type in: `download ___`
 -Uploading files (Uses serialization converting files into JSON objects.) Type in: `upload _____`
 -Navegate throught the file system. Type in: `cd ____` #Do not use relative paths. 
