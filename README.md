@@ -16,9 +16,9 @@ You may need to tweak the program depending on the version you want to run.
 </p>
 
 ## How-to
-<p>
-Each folder is provided with a text file named ```howto``` which explains how to use each program in detail. 
 
+Each folder is provided with a text file named ```howto``` which explains how to use each program in detail. 
+<p>
 I recommend using Metasploitable to test the exploits. Download a virtual machine [here](https://sourceforge.net/projects/metasploitable/)
 
 </p>
