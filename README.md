@@ -12,12 +12,12 @@ ___
 
 <h4>Are you looking for some crafted tools to use during a penetration test?</h4>
 <p>
-The following tools have been created to learn how to exploit system weaknesses and vulnerabilities using Python 2.X and 3.X  You may need to minimally tweak the program depending on the version you want to run.  
+The following programs have been created to learn how to exploit system weaknesses and vulnerabilities using Python 2.X and 3.X  You may need to minimally tweak the program depending on the version you want to run.  
 </p>
 
 ## How-to
 
-Each folder is provided with a text file named "howto" which explains how to use each program in detail. 
+Each folder is provided with a text file named <strong>"howto"</strong> which explains how to use each program in detail. 
 
 ## Requirements
 
