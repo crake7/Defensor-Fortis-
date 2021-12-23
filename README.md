@@ -69,3 +69,7 @@ This repo was created while taking the course: [Learn Python & Ethical Hacking F
 
 Writers and contributors take NO responsibility and/or liability for how you choose to use any of the source code available here. By using any of the files available in this repository, you understand that you are AGREEING TO USE AT YOUR OWN RISK. Once again, ALL files available here are for EDUCATION and/or RESEARCH purposes ONLY.
 
+
+## License
+
+The code is licensed under the MIT License.
